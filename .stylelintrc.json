@@ -1,26 +1,17 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
-    "indentation": 2,
-    "string-quotes": "double",
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "percentage",
     "no-duplicate-selectors": true,
-    "color-hex-case": "lower",
     "color-hex-length": "short",
     "color-named": "never",
     "selector-max-id": 1,
-    "selector-combinator-space-after": "always",
     "selector-attribute-quotes": "always",
-    "declaration-block-trailing-semicolon": "always",
-    "declaration-no-important": true,
-    "declaration-colon-space-before": "never",
-    "declaration-colon-space-after": "always",
-    "number-leading-zero": "always",
     "function-url-quotes": "always",
     "comment-whitespace-inside": "always",
     "selector-pseudo-element-colon-notation": "double",
-    "selector-class-pattern": null,
-    "selector-id-pattern": null,
-    "at-rule-no-unknown": null
+    "declaration-no-important": true
   },
   "ignoreFiles": ["**/node_modules/**", "public/**", "resources/**"]
 }
