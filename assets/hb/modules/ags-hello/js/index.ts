@@ -5,7 +5,7 @@
  */
 class HBModuleName {
   private elements: HTMLElement[];
-  private initialized: boolean = false;
+  private initialized = false;
 
   constructor() {
     this.elements = Array.from(document.querySelectorAll('.hb-module-name'));

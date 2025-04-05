@@ -1,5 +1,5 @@
-const { execSync } = require('child_process');
-const fs = require('fs');
+import { execSync } from 'child_process';
+import fs from 'fs';
 
 // Step 1: Sync version in package.json
 console.log('Syncing version in package.json...');
@@ -11,7 +11,10 @@ const repoUrl = execSync('git remote get-url origin').toString().trim();
 
 // Step 3: Run release-please to create a release PR
 console.log('Running release-please to create a release PR...');
-execSync(`npx release-please release-pr --token=$GITHUB_TOKEN --repo-url=${repoUrl}`, { stdio: 'inherit' });
+execSync(
+  `npx release-please release-pr --token=$GITHUB_TOKEN --repo-url=${repoUrl}`,
+  { stdio: 'inherit' },
+);
 
 // Step 4: Update ReadMe.md with the latest version
 console.log('Updating ReadMe.md with the latest version...');

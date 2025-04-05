@@ -1,17 +1,16 @@
 # English translations for the module
 - id: module_name_title
-  translation: "Module Title"
+  translation: 'Module Title'
 
 - id: module_name_description
-  translation: "Module description"
+  translation: 'Module description'
 
 - id: module_name_button_text
-  translation: "Read More"
+  translation: 'Read More'
 
 - id: module_name_loading
-  translation: "Loading..."
+  translation: 'Loading...'
 
 - id: module_name_error
-  translation: "Error loading content"
-
+  translation: 'Error loading content'
 # Add more translation strings as needed

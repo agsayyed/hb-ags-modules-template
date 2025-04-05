@@ -1,13 +1,15 @@
-{{- /* Module content template */ -}}
-{{ $params := .params }}
+{{- /* Module content template */ -}} {{ $params := .params }}
 
 <div class="hb-ags-hello-inner-content">
   {{- /* This is where your main module functionality goes */ -}}
-  <p>{{ i18n "module_name_description" | default "Default module content goes here." }}</p>
+  <p>
+    {{ i18n "module_name_description" | default "Default module content goes
+    here." }}
+  </p>
 
   {{- /* Example: Adding a button */ -}}
-  <button class="hb-ags-hello-button btn btn-primary" >
+  <button class="hb-ags-hello-button btn btn-primary">
     {{ i18n "module_name_button_text" | default $params.button_text }}
   </button>
 </div>
-</qodoArtifact>
+{{- /* End module content template */ -}}

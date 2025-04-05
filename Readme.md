@@ -10,10 +10,12 @@ This template is designed to simplify the creation of new HBStack modules. Follo
    ```
 
 2. **Replace Placeholders**:
+
    - Replace all occurrences of `ags-hello` with your new module name.
    - Update `hugo.yaml` to include your module's parameters.
 
 3. **Initialize the Module**:
+
    - Run the setup script to initialize the module:
 
      ```bash
@@ -21,6 +23,7 @@ This template is designed to simplify the creation of new HBStack modules. Follo
      ```
 
 4. **Start Development**:
+
    - Install dependencies:
 
      ```bash
@@ -34,6 +37,7 @@ This template is designed to simplify the creation of new HBStack modules. Follo
      ```
 
 5. **Test and Build**:
+
    - Run linting and formatting:
 
      ```bash
@@ -71,9 +75,9 @@ To use the script:
 The `template-config.yaml` file defines default settings for new modules:
 
 ```yaml
-default_module_name: "new-module"
-default_author: "Your Name"
-default_license: "MIT"
+default_module_name: 'new-module'
+default_author: 'Your Name'
+default_license: 'MIT'
 ```
 
 Update this file to customize the template for your needs.

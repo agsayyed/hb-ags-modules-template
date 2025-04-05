@@ -1,35 +1,47 @@
 {
-"$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-"release-type": "node",
-"tag-separator": "/",
-"changelog-sections": [
-  {
-    "type": "chore", "section": "Miscellaneous Changes 🛠️", "hidden": true
-  },
-  {
-    "type": "feature", "section": "New Features ✨", "hidden": false
-  },
-  {
-    "type": "fix", "section": "Bug Fixes 🐛", "hidden": false
-  },
-  {
-    "type": "docs", "section": "Documentation Updates 📚", "hidden": false
-  },
-  {
-    "type": "tutorial", "section": "Tutorials 📘", "hidden": false
-  },
-  {
-    "type": "article", "section": "Articles 📰", "hidden": false
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "node",
+  "tag-separator": "/",
+  "changelog-sections": [
+    {
+      "type": "chore",
+      "section": "Miscellaneous Changes 🛠️",
+      "hidden": true
+    },
+    {
+      "type": "feature",
+      "section": "New Features ✨",
+      "hidden": false
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes 🐛",
+      "hidden": false
+    },
+    {
+      "type": "docs",
+      "section": "Documentation Updates 📚",
+      "hidden": false
+    },
+    {
+      "type": "tutorial",
+      "section": "Tutorials 📘",
+      "hidden": false
+    },
+    {
+      "type": "article",
+      "section": "Articles 📰",
+      "hidden": false
+    }
+  ],
+  "bump-minor-pre-major": true,
+  "draft": false,
+  "include-v-in-tag": true,
+  "separate-pull-requests": true,
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "bump-patch-for-minor-pre-major": true
+    }
   }
-],
-"bump-minor-pre-major": true,
-"draft": false,
-"include-v-in-tag": true,
-"separate-pull-requests": true,
-"packages": {
-  ".": {
-    "release-type": "node",
-    "bump-patch-for-minor-pre-major": true
-  }
-}
 }

@@ -1,8 +1,8 @@
 # Default parameters for Hello World module
 enabled: true
-title: "Hello World Module"
-message: "Your first HBStack based ags-hello module is working!"
+title: 'Hello World Module'
+message: 'Your first HBStack based ags-hello module is working!'
 showButton: true
-button_text: "Click Me"
-background_color: "#f8f9fa"
-text_color: "#212529"
+button_text: 'Click Me'
+background_color: '#f8f9fa'
+text_color: '#212529'
