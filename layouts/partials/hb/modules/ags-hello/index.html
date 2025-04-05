@@ -1,0 +1,15 @@
+{{- /* ags Hello World Module */ -}}
+{{ $params := default dict (index site.Data.hb.modules .ModuleName) }}
+
+{{- with $params -}}
+  {{- if default true .enabled -}}
+    <div class="hb-ags-hello-world">
+      <h2 class="hb-ags-hello-world-title">{{ .title | default "Hello World!" }}</h2>
+      <div class="hb-ags-hello-world-message">{{ .message | default "This is a basic ags hello module based upon HbStack module." }}</div>
+
+      {{- if default false .showButton -}}
+        <button class="btn btn-primary hb-ags-hello-world-button">{{ i18n "hello_world_button_text" | default "Click Me" }}</button>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,44 @@
+{
+  "name": "hb-ags-modules-template",
+  "version": "0.1.0",
+  "description": "Template for creating HBStack modules",
+  "private": false,
+  "scripts": {
+    "lint:js": "eslint --ext .js,.ts,.jsx,.tsx .",
+    "lint:scss": "stylelint \"**/*.{css,scss}\"",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,html,md,json,yaml}\"",
+    "sync-version": "node ./scripts/sync-version.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agsayyed/hb-ags-modules-template.git"
+  },
+  "keywords": [
+    "hugo",
+    "hbstack",
+    "hugo-module",
+    "hb-ags-modules"
+  ],
+  "author": "AbdulSayyed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agsayyed/hb-ags-modules-template/issues"
+  },
+  "homepage": "https://github.com/agsayyed/hb-ags-modules-template#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.0",
+    "@types/node": "^22.10.6",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^11.0.0",
+    "prettier-plugin-go-template": "^0.0.15",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "eslint": "^8.41.0",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "typescript": "^5.0.4"
+  }
+}

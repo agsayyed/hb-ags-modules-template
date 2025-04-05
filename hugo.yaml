@@ -1,0 +1,25 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "HBStack Module Test"
+
+module:
+  imports:
+    - path: github.com/hbstack/hb
+    - path: .
+
+params:
+  hb:
+    modules:
+      {{ .ModuleName }}:
+        enabled: true
+        title: "Default Title for {{ .ModuleName }}"
+        message: "Default message for {{ .ModuleName }}."
+        showButton: true
+
+build:
+  writeStats: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    // Hugo specific extensions
+    "budparr.language-hugo-vscode",
+    "kaellarkin.hugo-shortcode-syntax",
+    "eliostruyf.vscode-hugo-themer",
+    // HTML, CSS, JavaScript
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    // YAML support
+    "redhat.vscode-yaml",
+    // General web development
+    "ritwickdey.liveserver",
+    "bradlc.vscode-tailwindcss",
+    // Editor enhancements
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "visualstudioexptteam.vscodeintellicode",
+    "oderwat.indent-rainbow",
+    // Git integration
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    // Markdown support
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint"
+  ]
+}

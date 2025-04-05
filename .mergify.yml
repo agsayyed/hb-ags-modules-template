@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: Automerge Renovate and Release-Please PRs
+    conditions:
+      - author=renovate[bot]
+      - author=release-please[bot]
+      - status-success=CI
+      - label=automerge
+    actions:
+      merge:
+        method: squash
