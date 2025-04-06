@@ -1,6 +1,6 @@
-baseURL: "http://localhost:1313/"
-languageCode: "en-us"
-title: "HBStack Module Test"
+baseURL: 'http://localhost:1313/'
+languageCode: 'en-us'
+title: 'HBStack Module Test'
 
 module:
   imports:
@@ -10,10 +10,10 @@ module:
 params:
   hb:
     modules:
-      {{ .ModuleName }}:
+      { { .ModuleName } }:
         enabled: true
-        title: "Default Title for {{ .ModuleName }}"
-        message: "Default message for {{ .ModuleName }}."
+        title: 'Default Title for {{ .ModuleName }}'
+        message: 'Default message for {{ .ModuleName }}.'
         showButton: true
 
 build:

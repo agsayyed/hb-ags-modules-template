@@ -1,6 +1,6 @@
 ---
-title: "HBStack Hello World"
-description: "Testing our first HBStack module"
+title: 'HBStack Hello World'
+description: 'Testing our first HBStack module'
 ---
 
 ## AGS Hello World Module Test

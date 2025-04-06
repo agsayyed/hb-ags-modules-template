@@ -1,5 +1,5 @@
 # File: data/hb/modules/hello-world/params.yaml
 enabled: true
-title: "Hello World Module"
-message: "Your first HBStack module is working!"
+title: 'Hello World Module'
+message: 'Your first HBStack module is working!'
 showButton: true

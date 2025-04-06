@@ -1,11 +1,19 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
+  "baseBranches": ["dev"],
+
   "packageRules": [
     {
       "updateTypes": ["minor", "patch"],
       "automerge": true
+    },
+    {
+      "updateTypes": ["major"],
+      "automerge": false
     }
-  ]
+  ],
+  "labels": ["dependencies"],
+  "prHourlyLimit": 5,
+  "prConcurrentLimit": 10,
+  "dependencyDashboard": true
 }
