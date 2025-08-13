@@ -5,12 +5,10 @@ This document outlines the workflow for managing HBStack modules using this temp
 ### Workflow Overview
 
 1. **Local Development**:
-
    - Commit changes using conventional commits (e.g., `feat: add new feature`).
    - Run linting, formatting, and testing locally.
 
 2. **Prepare for Release**:
-
    - Run the `sync-version.js` script to update the `package.json` version:
 
      ```bash
@@ -30,7 +28,6 @@ This document outlines the workflow for managing HBStack modules using this temp
      ```
 
 3. **CI/CD Pipeline**:
-
    - The pipeline is triggered by the push to the `main` branch or the new tag.
    - Steps in the pipeline:
      - Run `sync-version.js` to ensure `package.json` is up-to-date.
@@ -88,7 +85,6 @@ This section provides a summary of the steps we followed to initialize and uploa
 ### Steps to Initialize and Upload the Repository
 
 1. **Initialize the Git Repository**:
-
    - Run the following command to initialize the repository:
 
      ```bash
@@ -108,12 +104,10 @@ This section provides a summary of the steps we followed to initialize and uploa
      ```
 
 2. **Create a Remote Repository**:
-
    - Go to [GitHub](https://github.com/) and create a new repository (e.g., `hb-ags-modules-template`).
    - Copy the repository URL.
 
 3. **Add the Remote Repository**:
-
    - Add the remote URL to your local repository:
 
      ```bash
@@ -127,7 +121,6 @@ This section provides a summary of the steps we followed to initialize and uploa
      ```
 
 4. **Push the Repository**:
-
    - Push the `main` branch to the remote repository:
 
      ```bash
@@ -135,7 +128,6 @@ This section provides a summary of the steps we followed to initialize and uploa
      ```
 
 5. **Create and Push the `dev` Branch**:
-
    - Create the `dev` branch:
 
      ```bash
@@ -149,7 +141,6 @@ This section provides a summary of the steps we followed to initialize and uploa
      ```
 
 6. **Push Tags**:
-
    - If you have created tags locally, push them to the remote repository:
 
      ```bash
@@ -170,13 +161,11 @@ Renovate is a tool used to automate dependency updates. This section explains ho
 ### Steps to Set Up Renovate
 
 1. **Install Renovate**:
-
    - Go to the [Renovate GitHub App](https://github.com/apps/renovate).
    - Install the app for your GitHub account or organization.
    - Select the repository (`hb-ags-modules-template`) or enable it for all repositories.
 
 2. **Configure Renovate**:
-
    - Ensure a `renovate.json` file is present in the repository. This file defines how Renovate manages updates.
    - Example `renovate.json` configuration:
 
@@ -202,7 +191,6 @@ Renovate is a tool used to automate dependency updates. This section explains ho
      ```
 
 3. **Push the Configuration**:
-
    - Add and commit the `renovate.json` file:
 
      ```bash

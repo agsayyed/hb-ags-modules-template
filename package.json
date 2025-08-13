@@ -2,6 +2,7 @@
   "name": "hb-ags-modules-template",
   "version": "v0.1.1",
   "description": "Template for creating HBStack modules",
+  "type": "module",
   "private": false,
   "scripts": {
     "lint:js": "eslint --ext .js,.ts,.jsx,.tsx .",
@@ -37,8 +38,8 @@
     "postcss-cli": "^11.0.0",
     "prettier": "^3.0.0",
     "prettier-plugin-go-template": "^0.0.15",
-    "stylelint": "^15.6.2",
-    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard-scss": "^15.0.1",
     "typescript": "^5.1.6"
   }
 }
