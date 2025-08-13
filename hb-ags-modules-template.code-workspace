@@ -4,5 +4,96 @@
 			"path": "."
 		}
 	],
-  "settings": {}
+	"settings": {
+		"typescript.preferences.importModuleSpecifier": "relative",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit",
+			"source.fixAll.stylelint": "explicit"
+		},
+		"files.associations": {
+			"*.yaml": "yaml",
+			"*.yml": "yaml"
+		},
+		"eslint.workingDirectories": ["."],
+		"stylelint.enable": true,
+		"prettier.enable": true,
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/package-lock.json": true
+		},
+		"files.exclude": {
+			"**/node_modules": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint",
+			"stylelint.vscode-stylelint",
+			"ms-vscode.vscode-typescript-next",
+			"bradlc.vscode-tailwindcss",
+			"redhat.vscode-yaml",
+			"ms-vscode.vscode-json",
+			"budparr.language-hugo-vscode",
+			"eliostruyf.vscode-hugo-themer"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Hugo: Serve Development",
+				"type": "shell",
+				"command": "hugo server -D --bind 0.0.0.0",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "new"
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Build: Hugo",
+				"type": "shell",
+				"command": "hugo",
+				"group": "build",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				}
+			},
+			{
+				"label": "Lint: All",
+				"type": "shell",
+				"command": "npm run lint",
+				"group": "test",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				}
+			},
+			{
+				"label": "Format: All Files",
+				"type": "shell",
+				"command": "npm run format",
+				"group": "build",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				}
+			}
+		]
+	}
 }
