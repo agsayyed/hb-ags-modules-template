@@ -2,6 +2,7 @@
   "name": "hb-ags-modules-template",
   "version": "v0.1.1",
   "description": "Template for creating HBStack modules",
+  "type": "module",
   "private": false,
   "scripts": {
     "lint:js": "eslint --ext .js,.ts,.jsx,.tsx .",
