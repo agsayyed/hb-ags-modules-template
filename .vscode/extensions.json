@@ -14,12 +14,12 @@
     "ritwickdey.liveserver",
     "bradlc.vscode-tailwindcss",
     // Editor enhancements
-    "editorconfig.editorconfig",
+    //"editorconfig.editorconfig",
     "usernamehw.errorlens",
     "visualstudioexptteam.vscodeintellicode",
     "oderwat.indent-rainbow",
     // Git integration
-    "eamodio.gitlens",
+    //"eamodio.gitlens",
     "mhutchie.git-graph",
     // Markdown support
     "yzhang.markdown-all-in-one",

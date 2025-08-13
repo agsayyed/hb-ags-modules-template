@@ -71,10 +71,10 @@
   ],
 
   // Hugo specific settings
-  "hugo.baseURL": "http://localhost:1313/",
-  "hugo.buildDrafts": true,
-  "hugo.buildExpired": true,
-  "hugo.buildFuture": true,
+  // "hugo.baseURL": "http://localhost:1313/",
+  // "hugo.buildDrafts": true,
+  // "hugo.buildExpired": true,
+  // "hugo.buildFuture": true,
 
   // Search settings
   "search.exclude": {

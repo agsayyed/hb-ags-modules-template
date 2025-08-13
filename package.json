@@ -1,6 +1,6 @@
 {
   "name": "hb-ags-modules-template",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "description": "Template for creating HBStack modules",
   "private": false,
   "scripts": {
