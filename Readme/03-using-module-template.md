@@ -11,13 +11,21 @@ This template is designed to simplify the creation of new HBStack modules. Follo
    ```bash
    git clone <template-repo-url> new-module-name
    cd new-module-name
+   # delete files which are not required
+   1. code workspace that comes with template
+   2. Package.lock.json
+   3. .vscode folder
+   4. .git folder
+   5.
    ```
 
 2. **Replace Placeholders**:
-   - Replace all occurrences of `ags-hello` with your new module name.
-   - Update `hugo.yaml` to include your module's parameters.
+   - Replace all occurrences of `hb-ags-modules-template` with your new module name in `package.json`, `README.md`, and other relevant files.
+   - Update `config.yaml` to include your module's detail.
+   - Also include any import required to build the module.
 
 3. **Initialize the Module**:
+   - Run `hugo mod init github.com/yourusername/new-module-name` to initialize the module with the correct path.
    - Run the setup script to initialize the module:
 
      ```bash

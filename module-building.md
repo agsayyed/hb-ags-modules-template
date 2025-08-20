@@ -1,4 +1,4 @@
-## Why Hugo Modules?
+## Why Hugo Modules
 
 Hugo modules are a powerful feature that allows you to create reusable components and share them across different Hugo sites. They enable better organization of your code, promote reusability, and simplify the management of dependencies. By using Hugo modules, you can encapsulate functionality, styles, and assets in a structured way, making it easier to maintain and extend your projects.
 

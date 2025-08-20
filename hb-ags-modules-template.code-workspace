@@ -24,7 +24,12 @@
 		},
 		"files.exclude": {
 			"**/node_modules": true
-		}
+    },
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#3C2B0C",
+      "titleBar.activeBackground": "#543C11",
+      "titleBar.activeForeground": "#FDF9F4"
+    }
 	},
 	"extensions": {
 		"recommendations": [

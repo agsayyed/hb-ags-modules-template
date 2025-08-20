@@ -3,12 +3,15 @@
   "version": "v0.1.1",
   "description": "Template for creating HBStack modules",
   "type": "module",
-  "private": false,
+  "private": true,
   "scripts": {
     "lint:js": "eslint --ext .js,.ts,.jsx,.tsx .",
     "lint:scss": "stylelint \"**/*.{css,scss}\"",
-    "lint": "npm run lint:js && npm run lint:scss",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
+    "lint": "npm run lint:js && npm run lint:scss && npm run lint:md",
     "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,html,md,json,yaml}\"",
+    "format:md": "markdownlint-cli2 --fix \"**/*.md\" \"!node_modules/**\" && prettier --write \"**/*.md\"",
+    "clean:md": "node ./scripts/clean-markdown.js",
     "sync-version": "node ./scripts/sync-version.js"
   },
   "repository": {
@@ -34,6 +37,7 @@
     "@typescript-eslint/parser": "^5.59.7",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.41.0",
+    "markdownlint-cli2": "^0.18.1",
     "postcss": "^8.4.0",
     "postcss-cli": "^11.0.0",
     "prettier": "^3.0.0",
