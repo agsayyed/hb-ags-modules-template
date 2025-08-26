@@ -1,0 +1,11 @@
+{{- $data := "" }}
+{{- $flush := false }}
+{{- $alwaysOpen := false }}
+
+{{- if .IsNamedParams }}
+  {{- $data = .Get "data" }}
+  {{- if isset .Params "flush" }}{{ $flush = .Get "flush" }}{{ end }}
+  {{- if isset .Params "alwaysOpen" }}{{ $alwaysOpen = .Get "alwaysOpen" }}{{ end }}
+{{- else }}
+  {{- $data = .Get 0 }}
+{{- end }}

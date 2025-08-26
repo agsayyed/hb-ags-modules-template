@@ -8,9 +8,10 @@
     "lint:js": "eslint --ext .js,.ts,.jsx,.tsx .",
     "lint:scss": "stylelint \"**/*.{css,scss}\"",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
-    "lint": "npm run lint:js && npm run lint:scss && npm run lint:md",
+    "lint": "pnpm run lint:js && pnpm run lint:scss && pnpm run lint:md",
     "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,html,md,json,yaml}\"",
     "format:md": "markdownlint-cli2 --fix \"**/*.md\" \"!node_modules/**\" && prettier --write \"**/*.md\"",
+    "format:hugo": "node ./scripts/preserve-gotemplate.js",
     "clean:md": "node ./scripts/clean-markdown.js",
     "sync-version": "node ./scripts/sync-version.js"
   },
@@ -30,20 +31,22 @@
     "url": "https://github.com/agsayyed/hb-ags-modules-template/issues"
   },
   "homepage": "https://github.com/agsayyed/hb-ags-modules-template#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^7.0.0",
-    "@types/node": "^22.10.6",
-    "@typescript-eslint/eslint-plugin": "^5.59.7",
-    "@typescript-eslint/parser": "^5.59.7",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.41.0",
+    "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "eslint": "^9.34.0",
     "markdownlint-cli2": "^0.18.1",
-    "postcss": "^8.4.0",
-    "postcss-cli": "^11.0.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.6.2",
     "prettier-plugin-go-template": "^0.0.15",
     "stylelint": "^16.23.1",
     "stylelint-config-standard-scss": "^15.0.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.9.2"
   }
 }

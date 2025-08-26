@@ -8,15 +8,25 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "endOfLine": "lf",
+  "plugins": [
+    "prettier-plugin-go-template"
+  ],
   "overrides": [
     {
-      "files": ["*.html"],
+      "files": [
+        "*.html"
+      ],
       "options": {
-        "parser": "go-template"
+        "parser": "go-template",
+        "printWidth": 80,
+        "goTemplateBracketSpacing": true
       }
     },
     {
-      "files": ["*.yaml", "*.yml"],
+      "files": [
+        "*.yaml",
+        "*.yml"
+      ],
       "options": {
         "singleQuote": false,
         "bracketSpacing": true
