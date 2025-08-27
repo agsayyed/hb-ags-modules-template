@@ -2,11 +2,15 @@
 
 This document outlines the workflow for managing HBStack modules using this template. It includes steps for development, versioning, and automation.
 
+> [!NOTE]
+> It uses a small script to synchronise version from the tags to package.json, it can be done with `npm version ..` commands
+
 ### Workflow Overview
 
 1. **Local Development**:
    - Commit changes using conventional commits (e.g., `feat: add new feature`).
    - Run linting, formatting, and testing locally.
+   - Tag it, sync it, Push it.
 
 2. **Prepare for Release**:
    - Run the `sync-version.js` script to update the `package.json` version:
