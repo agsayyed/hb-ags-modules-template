@@ -29,7 +29,7 @@
   "homepage": "https://github.com/agsayyed/hb-ags-modules-template#readme",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^7.0.0",
-    "@types/node": "^22.10.6",
+    "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
     "autoprefixer": "^10.4.14",
